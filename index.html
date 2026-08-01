@@ -56,6 +56,14 @@
             margin-bottom: 10px;
         }
 
+        .status {
+            font-family: var(--serif);
+            font-style: italic;
+            color: var(--accent);
+            font-size: 0.95rem;
+            margin-bottom: 14px;
+        }
+
         .subtitle {
             color: var(--text-dim);
             font-size: 1rem;
@@ -64,7 +72,7 @@
         }
 
         section {
-            margin-bottom: 80px;
+            margin-bottom: 72px;
         }
 
         .tag {
@@ -79,6 +87,10 @@
         p {
             color: var(--text-dim);
             max-width: 58ch;
+        }
+
+        p+p {
+            margin-top: 14px;
         }
 
         .project {
@@ -102,6 +114,26 @@
             margin-bottom: 10px;
         }
 
+        .skills-group {
+            margin-top: 20px;
+        }
+
+        .skills-group .cat {
+            font-family: var(--sans);
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-dim);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .skills-group .list {
+            color: var(--text);
+            font-size: 0.95rem;
+            margin-bottom: 18px;
+        }
+
         .links {
             display: flex;
             gap: 28px;
@@ -115,7 +147,6 @@
             border-bottom: 1px solid var(--rule);
             padding-bottom: 3px;
             font-size: 0.95rem;
-            transition: border-color 0.2s;
         }
 
         .links a:hover,
@@ -129,12 +160,6 @@
             font-size: 0.8rem;
             margin-top: 40px;
         }
-
-        @media (prefers-reduced-motion: no-preference) {
-            .links a {
-                transition: border-color 0.2s ease, color 0.2s ease;
-            }
-        }
     </style>
 </head>
 
@@ -144,14 +169,52 @@
 
             <p class="label">Guadalajara, México</p>
             <h1>Sebastian Caballero Horta</h1>
+            <p class="status">→ en construcción constante</p>
             <p class="subtitle">Backend developer en formación. Python, FastAPI, PostgreSQL — construyo con calma,
                 reviso con cuidado.</p>
 
             <section>
                 <span class="tag">Sobre mí</span>
-                <p>Estudiante de Ingeniería en Sistemas Computacionales enfocado en desarrollo backend con Python.
-                    Construyo APIs REST con FastAPI, trabajo con PostgreSQL asíncrono y SQLAlchemy, y aplico buenas
-                    prácticas como autenticación JWT, migraciones versionadas y pruebas automatizadas.</p>
+                <p>Empecé del lado de la manufactura de precisión, operando maquinaria industrial donde el margen de
+                    error era cero y cada pieza se revisaba antes de salir. Esa misma disciplina — exactitud, revisar
+                    antes de entregar — es la que ahora aplico escribiendo backend.</p>
+                <p>Estudio Ingeniería en Sistemas Computacionales y construyo APIs con FastAPI y PostgreSQL asíncrono,
+                    aplicando autenticación real, migraciones versionadas y pruebas automatizadas. No busco que el
+                    código solo compile — busco que aguante producción.</p>
+            </section>
+
+            <section>
+                <span class="tag">Actualmente</span>
+                <p>Trabajo en atención al cliente en Farmacias Guadalajara mientras termino la carrera, y dedico mis
+                    horas libres a construir software real. <strong style="color:var(--text)">skill-cards</strong> — un
+                    sistema propio para medir progreso técnico — es mi proyecto principal en este momento.</p>
+            </section>
+
+            <section>
+                <span class="tag">Hacia dónde voy</span>
+                <p>Busco mi primera posición como backend developer — trainee o junior — donde pueda seguir construyendo
+                    sobre Python, FastAPI y PostgreSQL dentro de un equipo real. A mediano plazo, me interesa llevar ese
+                    mismo trabajo de backend hacia sistemas de datos y motorsport.</p>
+            </section>
+
+            <section>
+                <span class="tag">Lo que sé hacer</span>
+                <div class="skills-group">
+                    <span class="cat">Backend</span>
+                    <div class="list">Python · FastAPI · SQLAlchemy · Alembic</div>
+                </div>
+                <div class="skills-group">
+                    <span class="cat">Datos</span>
+                    <div class="list">PostgreSQL · SQL · MySQL</div>
+                </div>
+                <div class="skills-group">
+                    <span class="cat">Herramientas</span>
+                    <div class="list">Docker · Git / GitHub · JWT Auth · pytest</div>
+                </div>
+                <div class="skills-group">
+                    <span class="cat">Frontend básico</span>
+                    <div class="list">HTML · CSS</div>
+                </div>
             </section>
 
             <section>
