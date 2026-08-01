@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Caballero Horta — Backend Developer</title>
+    <style>
+        :root {
+            --bg: #0b0d10;
+            --text: #cfd3d6;
+            --text-dim: #6d7378;
+            --accent: #5c7c8a;
+            --rule: #202327;
+            --serif: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+            --sans: -apple-system, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: var(--sans);
+            line-height: 1.7;
+        }
+
+        .wrap {
+            max-width: 620px;
+            margin: 0 auto;
+            padding: 100px 24px 140px;
+            border-left: 1px solid var(--rule);
+        }
+
+        .inner {
+            padding-left: 40px;
+        }
+
+        .label {
+            font-family: var(--serif);
+            font-style: italic;
+            color: var(--text-dim);
+            font-size: 0.95rem;
+            margin-bottom: 6px;
+        }
+
+        h1 {
+            font-family: var(--serif);
+            font-weight: 400;
+            font-size: clamp(1.9rem, 5vw, 2.5rem);
+            letter-spacing: 0.01em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: var(--text-dim);
+            font-size: 1rem;
+            margin-bottom: 90px;
+            max-width: 45ch;
+        }
+
+        section {
+            margin-bottom: 80px;
+        }
+
+        .tag {
+            display: block;
+            font-size: 0.78rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: var(--text-dim);
+            max-width: 58ch;
+        }
+
+        .project {
+            border-top: 1px solid var(--rule);
+            padding-top: 22px;
+            margin-top: 22px;
+        }
+
+        .project h3 {
+            font-family: var(--serif);
+            font-weight: 400;
+            font-size: 1.15rem;
+            color: var(--text);
+            margin-bottom: 4px;
+        }
+
+        .project .stack {
+            font-size: 0.8rem;
+            color: var(--accent);
+            letter-spacing: 0.04em;
+            margin-bottom: 10px;
+        }
+
+        .links {
+            display: flex;
+            gap: 28px;
+            margin-top: 8px;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            color: var(--text);
+            text-decoration: none;
+            border-bottom: 1px solid var(--rule);
+            padding-bottom: 3px;
+            font-size: 0.95rem;
+            transition: border-color 0.2s;
+        }
+
+        .links a:hover,
+        .links a:focus-visible {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        footer {
+            color: var(--rule);
+            font-size: 0.8rem;
+            margin-top: 40px;
+        }
+
+        @media (prefers-reduced-motion: no-preference) {
+            .links a {
+                transition: border-color 0.2s ease, color 0.2s ease;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="inner">
+
+            <p class="label">Guadalajara, México</p>
+            <h1>Sebastian Caballero Horta</h1>
+            <p class="subtitle">Backend developer en formación. Python, FastAPI, PostgreSQL — construyo con calma,
+                reviso con cuidado.</p>
+
+            <section>
+                <span class="tag">Sobre mí</span>
+                <p>Estudiante de Ingeniería en Sistemas Computacionales enfocado en desarrollo backend con Python.
+                    Construyo APIs REST con FastAPI, trabajo con PostgreSQL asíncrono y SQLAlchemy, y aplico buenas
+                    prácticas como autenticación JWT, migraciones versionadas y pruebas automatizadas.</p>
+            </section>
+
+            <section>
+                <span class="tag">Proyectos</span>
+                <div class="project">
+                    <h3>skill-cards</h3>
+                    <div class="stack">FastAPI · PostgreSQL · Docker · pytest</div>
+                    <p>Sistema para medir y trackear el crecimiento de habilidades personales a lo largo del tiempo, con
+                        autenticación JWT y migraciones versionadas con Alembic.</p>
+                </div>
+                <div class="project">
+                    <h3>Pomodoro App</h3>
+                    <div class="stack">Flask · Arquitectura modular</div>
+                    <p>Aplicación de productividad con arquitectura de blueprints — 2º lugar en competencia interna
+                        universitaria.</p>
+                </div>
+            </section>
+
+            <section>
+                <span class="tag">Contacto</span>
+                <div class="links">
+                    <a href="mailto:caballerosebas698@gmail.com">Email</a>
+                    <a href="https://github.com/oraclesupreme63-droid">GitHub</a>
+                    <a href="https://www.linkedin.com/in/sebastian-caballero-horta-93189a24b/">LinkedIn</a>
+                </div>
+            </section>
+
+            <footer>Zapopan, Jalisco, México</footer>
+
+        </div>
+    </div>
+</body>
+
+</html>
